@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مطعم ديوان الكرم - كرم الضيافة وأصالة المذاق</title>
+   
+    <!-- استدعاء خط Cairo الأنيق من جوجل -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+   
+    <!-- ربط ملف التنسيقات الخارجي CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. الهيدر وشريط التنقل العلوي -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">ديوان <span class="accent-text">الكرم</span></div>
+           
+            <nav class="nav-links">
+                <a href="#" class="active">الرئيسية</a>
+                <a href="#menu">القائمة</a>
+                <a href="#about">من نحن</a>
+                <a href="#reviews">آراء الضيوف</a>
+                <a href="#contact">اتصل بنا</a>
+            </nav>
+           
+            <div>
+                <button class="btn-primary" id="btn-book-top">احجز طاولة</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. القسم الرئيسي (Hero Section) -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <span class="welcome-badge">مرحباً بكم في ديوان الكرم</span>
+            <h1 class="hero-title">رحلة طهي تفوق<br><span class="accent-text">التميز والتقاليد</span></h1>
+            <p class="hero-description">اختبر المزيج المثالي من الشغف والنكهة والإبداع في كل طبق شرقي. حيث كل وجبة لدينا هي بمثابة احتفال بكرم الضيافة الأصيل.</p>
+           
+            <div class="hero-actions">
+                <a href="#menu" class="btn-primary">استكشف القائمة</a>
+                <a href="#book" class="btn-secondary" id="btn-book-hero">احجز طاولة</a>
+            </div>
+           
+            <div class="rating-box">
+                <div class="stars">★★★★★</div>
+                <p class="rating-text"><strong>4.9 / 5</strong> بناءً على أكثر من 1,200 مراجعة للضيوف</p>
+            </div>
+        </div>
+       
+        <div class="hero-image-wrapper">
+            <img src="images/hero.jpg" alt="طبق شرقي فاخر" class="circle-img animate-img">
+        </div>
+    </section>
+
+    <!-- 3. ميزات المطعم الأربعة -->
+    <section class="features-section">
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">👨‍🍳</div>
+                <h3>كبار الطهاة</h3>
+                <p>طهاة شغوفون يبتكرون روائع الطهي من أجلك بكل حب وأصالة.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🌿</div>
+                <h3>مكونات طازجة</h3>
+                <p>فقط المكونات الطازجة والأجود من التوابل واللحوم تصل إلى طبقك.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">✨</div>
+                <h3>تجربة فاخرة</h3>
+                <p>أجواء راقية ولحظات لا تُنسى تناسب تطلعاتك وتطلعات عائلتك.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🤝</div>
+                <h3>ضيافة أصيلة</h3>
+                <p>خدمة استثنائية تعكس كرم الضيافة العربي الذي تفخر به دائماً.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. قسم توصيات الشيف -->
+    <section id="menu" class="menu-section">
+        <div class="section-header">
+            <div>
+                <span class="sub-title">تخصصاتنا</span>
+                <h2 class="main-title">توصيات الشيف المتميزة</h2>
+            </div>
+            <a href="#" class="view-all-link">عرض القائمة كاملة ←</a>
+        </div>
+       
+        <div class="menu-grid">
+            <!-- كارت طبق 1 -->
+            <div class="menu-card">
+                <img src="images/dish1.jpeg" alt="ريش غنم">
+                <h3>ريش غنم متبلة</h3>
+                <p>مشوية على الفحم تقدم مع الأرز المتبل بالزعفران والخضار.</p>
+                <div class="price">145.00 ر.س</div>
+            </div>
+           
+            <!-- كارت طبق 2 -->
+            <div class="menu-card">
+                <img src="images/dish2.jpeg" alt="مقبلات مشكلة">
+                <h3>طبق مقبلات الديوان</h3>
+                <p>تشكيلة فاخرة من الحمص، المتبل، التبولة والسمبوسك المقرمشة.</p>
+                <div class="price">65.00 ر.س</div>
+            </div>
+           
+            <!-- كارت طبق 3 (مختار ومميز بإطار عسلي) -->
+            <div class="menu-card featured-card">
+                <span class="badge">إختيار الشيف</span>
+                <img src="images/dish3.jpg" alt="طاجن مغربي">
+                <h3>طاجن لحم بالبرقوق</h3>
+                <p>لحم غنم مطهو ببطء مع البرقوق المعسل واللوز المحمص المقرمش.</p>
+                <div class="price">120.00 ر.س</div>
+            </div>
+           
+            <!-- كارت طبق 4 -->
+            <div class="menu-card">
+                <img src="images/dish4.jpg" alt="حلو شرقي">
+                <h3>كنافة ملكية بالفستق</h3>
+                <p>كنافة مقرمشة غنية بالقشطة الطازجة ومغطاة بالفستق الحلبي والقطر.</p>
+                <div class="price">45.00 ر.س</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. قسم الخدمات والمناسبات الخاصة -->
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="images/res1.jpg" alt="جلسة مطعم فاخرة">
+            </div>
+            <div class="about-content">
+                <span class="sub-title">مثالي لكل مناسبة</span>
+                <h2 class="main-title">احتفل بأجمل لحظات الحياة معنا</h2>
+                <p class="about-p">من العشاء العائلي الحميم إلى الاحتفالات الكبرى الفاخرة، يوفر ديوان الكرم الأجواء الشرقية الساحرة والخدمة الراقية لتجعل من كل مناسبة ذكرى لا تُنسى.</p>
+                <button class="btn-primary id-book-trigger">احجز طاولة الآن</button>
+               
+                <div class="features-list">
+                    <div class="list-item">
+                        <span class="check-mark">✓</span>
+                        <div>
+                            <h4>جلسات عائلية خاصة</h4>
+                            <p>توفير كامل الخصوصية لراحتكم وراحة عائلاتكم.</p>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <span class="check-mark">✓</span>
+                        <div>
+                            <h4>تلبية الحفلات الخارجية والولائم</h4>
+                            <p>نقل بوفيه ديوان الكرم الفاخر بالكامل إلى مكان حفلتكم.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. قسم التقييمات -->
+    <section id="reviews" class="reviews-section">
+        <span class="sub-title center">ضيوفنا السعداء</span>
+        <h2 class="main-title center">ماذا يقول زوارنا عن تجربتهم</h2>
+       
+        <div class="reviews-grid">
+            <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <p>"تجربة لا تُنسى! الأكل طازج جداً والنكهات الشرقية واضحة ومميزة، والخدمة سريعة والاستقبال في غاية الكرم والترحاب."</p>
+                <h4>— سارة م.</h4>
+            </div>
+            <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <p>"كل طبق كان مليئاً بالنكهات ومطهوًا بعناية فائقة لدرجة الكمال. أنصح بشدة بتجربة طاجن اللحم بالبرقوق، رائع حقاً!"</p>
+                <h4>— أحمد ت.</h4>
+            </div>
+            <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <p>"أفضل مطعم يقدم الأجواء الشرقية الفاخرة التي زرتها على الإطلاق. الاهتمام بأدق التفاصيل في الديكور والتقديم مذهل."</p>
+                <h4>— ريم ع.</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. الفوتر (أسفل الصفحة) -->
+    <footer id="contact" class="main-footer">
+        <div class="footer-container">
+           
+            <div class="newsletter-box">
+                <div class="newsletter-text">
+                    <h3>ابقَ على اطلاع بكل جديد</h3>
+                    <p>اشترك معنا لتصلك أقوى العروض الحصرية وقائمة الطعام الجديدة أولاً بأول.</p>
+                </div>
+                <div class="newsletter-form">
+                    <input type="email" id="subscriber-email" placeholder="أدخل بريدك الإلكتروني">
+                    <button class="btn-primary" id="btn-subscribe">اشترك الآن</button>
+                </div>
+            </div>
+
+            <div class="footer-links-grid">
+                <div class="footer-col">
+                    <h4>ديوان الكرم</h4>
+                    <p>نجمع بين كرم الضيافة وأصالة المذاق لنقدم لك تجربة استثنائية تدوم في الذاكرة.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#">الرئيسية</a></li>
+                        <li><a href="#menu">قائمة الطعام</a></li>
+                        <li><a href="#about">خدماتنا الخاصة</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>بيانات الاتصال</h4>
+                    <p>📍 123 شارع الكرم، المدينة، المملكة العربية السعودية</p>
+                    <p>📞 +966 12 345 6789</p>
